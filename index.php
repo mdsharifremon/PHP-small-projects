@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
 
 ?>
 
-        <h2>Find Your Palindrome Word</h2>
+        <h2>Check Your Palindrome Word</h2>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <input type="text" name="word" id="word" placeholder="Input a word to check....">
             <input type="submit" value="submit" name='submit'>
