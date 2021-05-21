@@ -10,33 +10,47 @@
 <body>
     <div class="container">
 <div class="box">
-<?php 
 
-$msg = 'result is';
-
-if(isset($_POST['submit'])){
-
-    $word = $_POST['word'];
-    $rev = strrev($word);
-
-    if($rev === $word){
-        $msg =  $word . ' is a palindrome word.' . '<br>' .  ' WINNER! WINNER! CHICKEN DINNER!!!';
-    }else{
-        $msg = $word . ' is not a palindrome word!' . '<br>' . 'oops!!! Try again.';
-    }
-}
-
-?>
-
+<!--- Check Palindrome Word -------------->
         <h2>Check Your Palindrome Word</h2>
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <form action="palindrome.php" method="post">
             <input type="text" name="word" id="word" placeholder="Input a word to check....">
             <input type="submit" value="submit" name='submit'>
         </form>
+<!----- Palindrome Word ------->
 
-        <div class="result">
-                <?php echo $msg; ?>
-        </div>
+<!-------- Area of Circle ------>
+        <h2>Area of Circle</h2>
+        <form action="circle.php" method="post">
+            <input type="number" name="base" id="base" placeholder="Input a base to check....">
+            <input type="submit" value="result" name='circle'>
+        </form>
+
+<!------ Area of Circle -------> 
+
+<!------ Area of Triangle ------>
+            <h2>Area of Triangle</h2>
+                    <form action="triangle.php" method="post">
+                        <input type="number" name="height" id="height" placeholder="Input a height">
+                        <input type="number" name="width" id="width" placeholder="Input a width">
+                        <input type="submit" value="result" name='triangle'>
+                    </form>
+
+<!------ Area of Triangle ------>
+
+
+
+<!------ Area of Triangle ------>
+
+<!------ Area of Triangle ------>
+
+
+
+
+
+
+
+
     </div>
 </div>
     
